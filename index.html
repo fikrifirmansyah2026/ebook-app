@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Book Sukses Usia Muda</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>📘 Sukses di Usia Muda</h1>
+  </header>
+
+  <!-- INTRO -->
+  <section id="intro" class="container">
+    <h2>Mulai Perjalanan Suksesmu 🚀</h2>
+    <p>
+      Panduan lengkap untuk membangun mindset, skill, dan finansial sejak usia muda.
+    </p>
+    <button onclick="startReading()">Mulai Baca</button>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="container hidden">
+    <h2>📚 Daftar Isi</h2>
+
+    <div class="card">
+      <h3>Bab 1: Mindset Sukses</h3>
+      <p>Membangun pola pikir orang sukses.</p>
+      <a href="pages/bab1.html">Baca →</a>
+    </div>
+
+    <div class="card">
+      <h3>Bab 2: Skill Penting</h3>
+      <p>Skill yang wajib dikuasai di era digital.</p>
+      <a href="pages/bab2.html">Baca →</a>
+    </div>
+
+    <div class="card">
+      <h3>Bab 3: Finansial</h3>
+      <p>Strategi mengelola uang sejak muda.</p>
+      <a href="pages/bab3.html">Baca →</a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 E-Book Sukses Usia Muda</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function startReading() {
+      document.getElementById("intro").classList.add("hidden");
+      document.getElementById("menu").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+                               </html>
