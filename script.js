@@ -114,3 +114,7 @@ window.onload = function () {
     document.body.style.fontSize = size + "px";
   }
 };
+
+  setTimeout(() => {
+  document.getElementById("splash").style.display = "none";
+}, 2000);
