@@ -92,3 +92,13 @@ function nextPage() {
     window.location.href = "bab3.html";
   }
   }
+
+  window.addEventListener("scroll", function () {
+  let scrollTop = document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  let progress = (scrollTop / height) * 100;
+  document.getElementById("progress").style.width = progress + "%";
+});
