@@ -40,3 +40,24 @@ function unlockPremium() {
   localStorage.setItem("premium", "true");
   alert("🎉 Premium berhasil diaktifkan!");
 }
+
+  // Toggle Dark Mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+
+  // Simpan mode
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("darkMode", "true");
+  } else {
+    localStorage.setItem("darkMode", "false");
+  }
+}
+
+// Load saat buka
+window.onload = function () {
+  const darkMode = localStorage.getItem("darkMode");
+
+  if (darkMode === "true") {
+    document.body.classList.add("dark");
+  }
+};
