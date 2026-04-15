@@ -1,52 +1,35 @@
-/* Ukuran dasar */
+/* FORCE ukuran teks (paksa besar) */
 body {
-  font-size: 18px; /* sebelumnya kecil */
-  line-height: 1.7; /* biar lega */
+  font-size: 20px !important;
+  line-height: 1.8 !important;
 }
 
-/* Judul utama */
+/* Judul */
 h1 {
-  font-size: 26px;
-  margin-bottom: 15px;
+  font-size: 28px !important;
 }
 
-/* Sub judul */
 h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 24px !important;
 }
 
 h3 {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 22px !important;
 }
 
 /* Paragraf */
 p {
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 20px !important;
 }
 
 /* List */
 li {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 20px !important;
 }
 
-/* Container biar lebih nyaman dibaca */
+/* Container biar rapi */
 .container {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
-  padding: 20px;
-}
-
-/* Card (daftar isi) */
-.card {
-  padding: 20px;
-  font-size: 18px;
-}
-
-/* Tombol */
-button {
-  font-size: 16px;
+  padding: 25px;
 }
