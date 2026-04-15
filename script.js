@@ -1,18 +1,32 @@
-// Fungsi mulai membaca
-function startReading() {
-  document.getElementById("intro").classList.add("hidden");
-  document.getElementById("menu").classList.remove("hidden");
-
-  // Simpan status ke localStorage
-  localStorage.setItem("started", "true");
+// Simpan halaman terakhir
+function saveProgress(page) {
+  localStorage.setItem("lastPage", page);
 }
 
-// Saat halaman dibuka, cek apakah user sudah mulai
-window.onload = function () {
-  const started = localStorage.getItem("started");
+// Ambil halaman terakhir
+function continueReading() {
+  const lastPage = localStorage.getItem("lastPage");
 
-  if (started === "true") {
-    document.getElementById("intro").classList.add("hidden");
-    document.getElementById("menu").classList.remove("hidden");
+  if (lastPage) {
+    window.location.href = lastPage;
+  } else {
+    alert("Kamu belum mulai membaca");
   }
-};
+}
+
+// Bookmark halaman
+function bookmarkPage(page) {
+  localStorage.setItem("bookmark", page);
+  alert("Halaman berhasil di-bookmark!");
+}
+
+// Buka bookmark
+function openBookmark() {
+  const bookmark = localStorage.getItem("bookmark");
+
+  if (bookmark) {
+    window.location.href = bookmark;
+  } else {
+    alert("Belum ada bookmark");
+  }
+}
