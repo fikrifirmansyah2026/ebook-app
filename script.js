@@ -102,3 +102,15 @@ function nextPage() {
   let progress = (scrollTop / height) * 100;
   document.getElementById("progress").style.width = progress + "%";
 });
+
+  function changeFont(size) {
+  document.body.style.fontSize = size + "px";
+  localStorage.setItem("fontSize", size);
+}
+
+window.onload = function () {
+  const size = localStorage.getItem("fontSize");
+  if (size) {
+    document.body.style.fontSize = size + "px";
+  }
+};
