@@ -61,3 +61,34 @@ window.onload = function () {
     document.body.classList.add("dark");
   }
 };
+
+  let startX = 0;
+
+document.addEventListener("touchstart", function (e) {
+  startX = e.touches[0].clientX;
+});
+
+document.addEventListener("touchend", function (e) {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    // swipe kiri → next
+    nextPage();
+  }
+
+  if (endX - startX > 50) {
+    // swipe kanan → back
+    window.history.back();
+  }
+});
+
+// NEXT PAGE LOGIC
+function nextPage() {
+  const current = window.location.pathname;
+
+  if (current.includes("bab1")) {
+    window.location.href = "bab2.html";
+  } else if (current.includes("bab2")) {
+    window.location.href = "bab3.html";
+  }
+  }
