@@ -25,8 +25,18 @@ function openBookmark() {
   const bookmark = localStorage.getItem("bookmark");
 
   if (bookmark) {
-    window.location.href = bookmark;
-  } else {
-    alert("Belum ada bookmark");
+    // Cek akses premium
+function checkPremium() {
+  const isPremium = localStorage.getItem("premium");
+
+  if (isPremium !== "true") {
+    alert("🔒 Konten ini khusus premium!");
+    window.location.href = "../index.html";
   }
+}
+
+// Aktifkan premium (simulasi)
+function unlockPremium() {
+  localStorage.setItem("premium", "true");
+  alert("🎉 Premium berhasil diaktifkan!");
 }
