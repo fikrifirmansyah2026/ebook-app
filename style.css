@@ -33,3 +33,22 @@ li {
   margin: auto;
   padding: 25px;
 }
+
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark .bottom-nav {
+  background: #1e1e1e;
+}
+
+body.dark a {
+  color: #4CAF50;
+}
