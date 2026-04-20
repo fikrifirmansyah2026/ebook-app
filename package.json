@@ -1,0 +1,24 @@
+{
+  "name": "ebook-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E-Book Sukses Usia Muda - Web App",
+  "author": "Fikri Firmansyah",
+  "license": "Apache-2.0",
+  "homepage": "https://username.github.io/ebook-app",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "preview": "npx serve . -l 3000",
+    "deploy:firebase": "firebase deploy"
+  },
+  "keywords": [
+    "ebook",
+    "webapp",
+    "github-pages",
+    "firebase"
+  ],
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
