@@ -118,3 +118,7 @@ window.onload = function () {
   setTimeout(() => {
   document.getElementById("splash").style.display = "none";
 }, 2000);
+
+  if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+  }
