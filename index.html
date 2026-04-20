@@ -4,79 +4,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-Book sukses diusia muda - Panduan lengkap untuk mencapai kesuksesan sejak usia muda">
   <title>E-Book Sukses Usia Muda</title>
-
-  <!-- Google Font -->
-  <link <a href="premium.html">Baca →</a>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-  <div id="splash">
-  <h1>📘 E-Book App</h1>
-  </div>
-  
 <body>
+  <!-- PROGRESS BAR -->
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash" class="splash">
+    <div class="splash-content">
+      <h1>📘 E-Book App</h1>
+      <p>Sukses di Usia Muda</p>
+    </div>
+  </div>
 
   <!-- HEADER -->
   <header class="header">
-    <h1>📘 Sukses di Usia Muda</h1>
+    <div class="header-container">
+      <h1>📘 Sukses di Usia Muda</h1>
+      <p class="subtitle">Panduan Lengkap Kesuksesan Sejak Dini</p>
+    </div>
   </header>
 
-  <!-- INTRO -->
-  <section id="intro" class="container">
-    <h2>Mulai Perjalanan Suksesmu 🚀</h2>
-    <p>
-      Panduan lengkap untuk membangun mindset, skill, dan finansial sejak usia muda.
-    </p>
-    <button onclick="startReading()">Mulai Baca</button>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <!-- INTRO SECTION -->
+    <section id="intro" class="intro-section">
+      <div class="container">
+        <h2>Mulai Perjalanan Suksesmu 🚀</h2>
+        <p class="intro-text">
+          Panduan lengkap untuk membangun mindset, skill, dan finansial sejak usia muda. 
+          Investasi terbaik adalah investasi pada diri sendiri.
+        </p>
+        <button class="btn btn-primary" onclick="startReading()">Mulai Baca</button>
+      </div>
+    </section>
 
-  <!-- MENU -->
-  <section id="menu" class="container hidden">
-    <h2>📚 Daftar Isi</h2>
-<div style="margin-top:20px;">
-  <button onclick="continueReading()">📖 Lanjutkan Membaca</button>
-  <button onclick="openBookmark()">🔖 Bookmark</button>
-</div>
-    
-<div>
-  <button onclick="changeFont(18)">A-</button>
-  <button onclick="changeFont(22)">A+</button>
-</div>
-    
-    <div class="card">
-      <h3>Bab 1: Mindset Sukses</h3>
-      <p>Membangun pola pikir orang sukses.</p>
-      <a href="pages/bab1.html">Baca →</a>
-    </div>
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section hidden">
+      <div class="container">
+        <h2>📚 Daftar Isi</h2>
+        
+        <!-- READING CONTROLS -->
+        <div class="reading-controls">
+          <button class="btn btn-secondary" onclick="continueReading()">📖 Lanjutkan Membaca</button>
+          <button class="btn btn-secondary" onclick="openBookmark()">🔖 Bookmark Saya</button>
+        </div>
 
-    <div class="card">
-      <h3>Bab 2: Skill Penting</h3>
-      <p>Skill yang wajib dikuasai di era digital.</p>
-      <a href="pages/bab2.html">Baca →</a>
-    </div>
+        <!-- FONT SIZE CONTROLS -->
+        <div class="font-controls">
+          <span>Ukuran Teks:</span>
+          <button class="btn btn-sm" onclick="changeFont(16)">A-</button>
+          <button class="btn btn-sm" onclick="changeFont(22)">A+</button>
+        </div>
 
-    <div class="card">
-      <h3>Bab 3: Finansial</h3>
-      <p>Strategi mengelola uang sejak muda.</p>
-      <a href="pages/bab3.html">Baca →</a>
-    </div>
-<button onclick="unlockPremium()">💰 Unlock Premium</button>
-    <button onclick="toggleDarkMode()">🌙</button>
-  </section>
+        <!-- CHAPTERS -->
+        <div class="chapters-grid">
+          <div class="card">
+            <div class="card-header">
+              <h3>Bab 1: Mindset Sukses</h3>
+            </div>
+            <div class="card-body">
+              <p>Membangun pola pikir orang sukses dan menghilangkan mindset yang merugikan.</p>
+              <a href="pages/bab1.html" class="btn btn-small">Baca →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Bab 2: Skill Penting</h3>
+            </div>
+            <div class="card-body">
+              <p>Skill yang wajib dikuasai di era digital untuk tetap relevan dan kompetitif.</p>
+              <a href="pages/bab2.html" class="btn btn-small">Baca →</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Bab 3: Finansial</h3>
+            </div>
+            <div class="card-body">
+              <p>Strategi mengelola uang sejak muda untuk membangun kekayaan jangka panjang.</p>
+              <a href="pages/bab3.html" class="btn btn-small">Baca →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREMIUM & SETTINGS -->
+        <div class="action-buttons">
+          <button class="btn btn-premium" onclick="unlockPremium()">💰 Unlock Premium</button>
+          <button class="btn btn-dark-mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p>© 2026 E-Book Sukses Usia Muda</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 E-Book Sukses Usia Muda. All rights reserved.</p>
+      <p class="footer-text">Dibuat dengan ❤️ untuk generasi muda Indonesia</p>
+    </div>
   </footer>
 
-  <!-- SCRIPT -->
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
   <script>
     function startReading() {
       document.getElementById("intro").classList.add("hidden");
       document.getElementById("menu").classList.remove("hidden");
+      saveProgress('index.html');
     }
   </script>
-
-  <script src="script.js"></script>
 </body>
-                               </html>
+</html>
